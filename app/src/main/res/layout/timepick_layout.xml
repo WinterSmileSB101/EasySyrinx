@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <TimePicker
+        android:id="@+id/time_pick_timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fitsSystemWindows="true">
+    </TimePicker>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorSliteGray"
+        android:layout_below="@id/time_pick_timePicker"></LinearLayout>
+    <Button
+        android:id="@+id/time_pick_sureBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/time_pick_timePicker"
+        android:text="确认"
+        android:background="@color/colorWrite"/>
+</LinearLayout>

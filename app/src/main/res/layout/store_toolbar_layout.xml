@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<ImageButton
+    android:background="@mipmap/libe_white_back_indicator"
+    android:id="@+id/toolbar_backBtn"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginLeft="15dp"/>
+<android.support.v7.widget.AppCompatSpinner
+    android:id="@+id/toolbar_spinner"
+    android:layout_width="150dp"
+    android:layout_height="30dp"
+    android:layout_toRightOf="@+id/toolbar_backBtn"
+    android:layout_marginLeft="15dp">
+
+</android.support.v7.widget.AppCompatSpinner>
+    <ImageButton
+        android:background="@mipmap/ico_company_selected"
+        android:id="@+id/fragment_account_book_store"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>

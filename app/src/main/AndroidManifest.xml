@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="winter.zxb.smilesb101.easysyrinx">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Activity.SyrinxItemRecycleViewActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".UI.Activity.SyrinxItemDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".UI.calculationUI.calculationMain"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".UI.calculationUI.store_account_book_activity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+            android:name=".UI.calculationUI.date_time_pick"
+            android:label="时间选择"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".testActivity">
+        </activity>
+        <activity android:name=".UI.calculationUI.baseChoseActivityMain">
+        </activity>
+        <activity android:name=".UI.calculationUI.memberChoseActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/calculation"
+            android:icon="@drawable/calculation_128px_1185197_easyicon"
+            android:title="记账"/>
+        <item
+            android:id="@+id/notepad"
+            android:icon="@drawable/notepad"
+            android:title="备忘录"/>
+        <item
+            android:id="@+id/transport"
+            android:icon="@drawable/freight_transport_165"
+            android:title="物流信息"/>
+        <item
+            android:id="@+id/cart"
+            android:icon="@drawable/cart"
+            android:title="购物车"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/AR"
+                android:icon="@drawable/ar"
+                android:title="AR"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send"/>
+        </menu>
+    </item>
+
+</menu>

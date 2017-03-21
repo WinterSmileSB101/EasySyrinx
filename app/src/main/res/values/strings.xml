@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">易希芸</string>
+
+    <string name="navigation_drawer_open">打开导航</string>
+    <string name="navigation_drawer_close">关闭导航</string>
+
+    <string name="action_settings">设置</string>
+    <string name="title_activity_calculation_main">记账</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

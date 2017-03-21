@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+
+    <attr name="border_width" format="dimension"/>
+
+    <attr name="border_color" format="color"/>
+
+</declare-styleable>
+<!--定义时间显示View的自定义属性-->
+    <declare-styleable name="Timer">
+        <attr name="needle_size" format="dimension"/>
+        <attr name="needle_color" format="color"/>
+        <attr name="time_size" format="dimension"/>
+        <attr name="time_color" format="color"/>
+        <attr name="show_tickMark" format="boolean"/>
+    </declare-styleable>
+</resources>
