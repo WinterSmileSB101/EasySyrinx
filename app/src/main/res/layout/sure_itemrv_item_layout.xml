@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:background="@color/colorSliteGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorWrite"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:typeface="monospace"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/itemName"
+            android:typeface="monospace"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/itemClass"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorGray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp">
+            <TextView
+                android:id="@+id/itemPrices"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:typeface="monospace"
+                android:textColor="@color/colorOrange"
+                android:textSize="14sp"
+                android:text="￥ 0.0"/>
+            <TextView
+                android:id="@+id/itemNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="monospace"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:text="x1"
+                android:layout_marginRight="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>

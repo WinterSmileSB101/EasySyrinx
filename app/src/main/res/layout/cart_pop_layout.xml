@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorWrite">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorSliteGray">
+
+        <TextView
+            android:id="@+id/IsFreePost"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:typeface="monospace"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@color/colorOrange"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:typeface="monospace"/>
+
+        <TextView
+            android:id="@+id/deleteAll"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:typeface="monospace"
+            android:text="@string/deleteCart"/>
+
+    </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

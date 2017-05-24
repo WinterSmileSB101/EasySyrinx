@@ -31,7 +31,7 @@ public class memberChoseActivity extends baseChoseActivityMain{
 		fragments.add(memberChoseFragment.newInstance(0,addBtn,bootmlayout));
 		fragments.add(memberChoseFragment.newInstance(1,addBtn,bootmlayout));
 
-		baseSectionpageAdapter adapter = new baseSectionpageAdapter(getSupportFragmentManager(),fragments,titles,sureBtn);
+		//baseSectionpageAdapter adapter = new baseSectionpageAdapter(this.getSupportFragmentManager(),fragments,titles,sureBtn);
 		CommonNavigator commonNavigator = new CommonNavigator(this);
 		commonNavigator.setAdjustMode(true);
 		commonNavigator.setAdapter(new CommonNavigatorAdapter(){

@@ -3,6 +3,7 @@
           package="winter.zxb.smilesb101.easysyrinx">
 
     <application
+        android:name="org.litepal.LitePalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/appicon"
         android:label="@string/app_name"
@@ -11,7 +12,8 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -47,6 +49,8 @@
         </activity>
         <activity android:name=".UI.calculationUI.memberChoseActivity">
         </activity>
+        <activity android:name=".UI.Activity.SureCartActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

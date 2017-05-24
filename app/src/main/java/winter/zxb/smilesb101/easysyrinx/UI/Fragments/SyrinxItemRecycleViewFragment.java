@@ -19,6 +19,7 @@ import winter.zxb.smilesb101.easysyrinx.Data.SyrinxInfo.SyrinxItemRecycleViewAda
 import winter.zxb.smilesb101.easysyrinx.Data.SyrinxInfo.SyrinxSeries;
 import winter.zxb.smilesb101.easysyrinx.MainActivity;
 import winter.zxb.smilesb101.easysyrinx.R;
+import winter.zxb.smilesb101.easysyrinx.UI.Activity.SyrinxItemRecycleViewActivity;
 
 /**
  * 项目名称：EasySyrinx
@@ -40,7 +41,7 @@ public class SyrinxItemRecycleViewFragment extends Fragment{
 	private SyrinxItemRecycleViewAdapter itemRecycleViewAdapter;
 	private SyrinxSeries syrinxSeries;
 	private ArrayList<SyrinxItem> syrinxItems;
-	private AppCompatActivity activity;
+	private SyrinxItemRecycleViewActivity activity;
 
 	public SyrinxSeries getSyrinxSeries(){
 		return syrinxSeries;
@@ -63,7 +64,7 @@ public class SyrinxItemRecycleViewFragment extends Fragment{
 		return activity;
 	}
 
-	public void setActivity(AppCompatActivity activity){
+	public void setActivity(SyrinxItemRecycleViewActivity activity){
 		this.activity = activity;
 	}
 
@@ -72,7 +73,7 @@ public class SyrinxItemRecycleViewFragment extends Fragment{
 		syrinxItems = new ArrayList<>();
 	}
 
-	public static SyrinxItemRecycleViewFragment getInstance(SyrinxSeries series,ArrayList<SyrinxItem> list,AppCompatActivity appCompatActivity)
+	public static SyrinxItemRecycleViewFragment getInstance(SyrinxSeries series,ArrayList<SyrinxItem> list,SyrinxItemRecycleViewActivity appCompatActivity)
 	{
 		SyrinxItemRecycleViewFragment fragment = new SyrinxItemRecycleViewFragment();
 		fragment.setSyrinxSeries(series);

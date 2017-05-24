@@ -127,6 +127,7 @@ public class SyrinxSeriesRecycleViewAdapter extends RecyclerView.Adapter<SyrinxS
 		Glide.with(context)
 				.load(series.getImageUrl())
 				.into(holder.seriesImage);
+
 	}
 
 	@Override
