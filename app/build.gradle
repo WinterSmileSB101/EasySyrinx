@@ -36,5 +36,6 @@ dependencies {
     compile 'com.android.support:cardview-v7:24.2.1'
     compile 'org.litepal.android:core:1.5.1'
     compile 'com.jude:rollviewpager:1.4.6'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
     testCompile 'junit:junit:4.12'
 }

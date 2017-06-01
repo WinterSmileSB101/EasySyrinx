@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+                android:id="@+id/container"
+    android:background="@color/colorPrimary">
+    
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorSliteGray"></android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/manageBtn"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@drawable/gray_slitegray_btn"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorOrange"
+        android:typeface="monospace"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="保存"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSliteGray"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorWrite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@color/colorWrite">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:typeface="monospace"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:text="收货人"
+                    android:layout_marginRight="10dp"/>
+
+                <EditText
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorSliteGray"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@color/colorWrite">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:typeface="monospace"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:text="联系电话"
+                    android:layout_marginRight="10dp"/>
+
+                <EditText
+                    android:id="@+id/Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorSliteGray"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/write_gray_background">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:typeface="monospace"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:text="所在地区"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/quyu"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|right"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:singleLine="true"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/right_arrow"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorSliteGray"></LinearLayout>
+
+            <LinearLayout
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/write_gray_background">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:typeface="monospace"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:text="街道"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/jiedao"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|right"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:singleLine="true"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/right_arrow"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorSliteGray"></LinearLayout>
+
+            <EditText
+                android:id="@+id/xiangxi"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:typeface="monospace"
+                android:textColor="@color/colorBlack"
+                android:hint="详细地址"
+                android:layout_margin="15dp"
+                android:textSize="16sp"
+                android:gravity="start"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorSliteGray"></LinearLayout>
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/colorAccent"
+                android:typeface="monospace"
+                android:textSize="16sp"
+                android:text="删除地址"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@color/colorWrite"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/setDefault"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@color/colorWrite"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:text="设为默认地址"/>
+
+                <CheckBox
+                    android:id="@+id/defaultBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

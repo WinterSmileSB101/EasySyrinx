@@ -34,6 +34,7 @@ import java.util.ArrayList;
 import winter.zxb.smilesb101.easysyrinx.Data.SyrinxInfo.ShoppingCart;
 import winter.zxb.smilesb101.easysyrinx.Data.SyrinxInfo.ShoppingCartList;
 import winter.zxb.smilesb101.easysyrinx.Data.SyrinxInfo.SyrinxItem;
+import winter.zxb.smilesb101.easysyrinx.Data.UserAddressInfo;
 import winter.zxb.smilesb101.easysyrinx.MainActivity;
 import winter.zxb.smilesb101.easysyrinx.R;
 
@@ -61,6 +62,8 @@ public class SureCartActivity extends AppCompatActivity implements View.OnClickL
 	CheckBox buyerFuKuan;
 	Context context;
 
+	TextView whoGetGoods,whoGetPhone,whoGetAdderess;
+
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -71,6 +74,17 @@ public class SureCartActivity extends AppCompatActivity implements View.OnClickL
 		actionBar = getSupportActionBar();
 		actionBar.setTitle("确认订单");
 		actionBar.setDisplayHomeAsUpEnabled(true);
+
+		/**
+		 * 设置默认的地址，从数据库获取
+		 */
+		whoGetGoods = (TextView)findViewById(R.id.whoGetGoods);
+		whoGetPhone = (TextView)findViewById(R.id.whoGetPhone);
+		whoGetAdderess = (TextView)findViewById(R.id.whoGetAdderess);
+		UserAddressInfo info = new UserAddressInfo("张孝波","13194889618",true,"成都");
+		whoGetGoods.setText(info.getUserName());
+		whoGetPhone.setText(info.getUserPhone());
+		whoGetAdderess.setText(info.getUserAddress());
 
 		price = (TextView)findViewById(R.id.price);
 		sureBtn = (RelativeLayout)findViewById(R.id.sureBtn);
@@ -113,12 +127,14 @@ public class SureCartActivity extends AppCompatActivity implements View.OnClickL
 	public void onClick(View v){
 		switch(v.getId())
 		{
-			case R.id.buyerInfo://用户信息
+			case R.id.buyerInfo://用户地址信息
 				Log.e(TAG,"onClick: 用户信息");
+				Intent intent = new Intent(context,AddressActivity.class);
+				startActivity(intent);
 				break;
 			case R.id.sureBtn://提交订单
 
-				//保存数据
+				//保存数据，待完成，先保存到一个xm文件中
 
 				//清空临时数据
 				ShoppingCartList.SHOPPING_CART_LIST.cleraShoppingCart();

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <litepal>
+    <dbname value="EasySyrinx"></dbname>
+    <version value="6"></version>
+
+    <list>
+        <mapping class="winter.zxb.smilesb101.easysyrinx.Data.SyrinxInfo.SyrinxItem"></mapping>
+        <mapping class="winter.zxb.smilesb101.easysyrinx.Data.UserAddressInfo"></mapping>
+        <mapping class="winter.zxb.smilesb101.easysyrinx.Data.ProvinceInfo"></mapping>
+        <mapping class="winter.zxb.smilesb101.easysyrinx.Data.CityInfo"></mapping>
+        <mapping class="winter.zxb.smilesb101.easysyrinx.Data.TownInfo"></mapping>
+    </list>
+</litepal>
